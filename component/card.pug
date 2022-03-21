@@ -1,0 +1,29 @@
+mixin card
+  a.card(class!=attributes.class href="#")
+        span.card__code Код товару: 48896
+        picture
+          source(srcset="./img/140357243.webp", type="image/webp")
+          img.card__pic(src="./img/140357243.jpg", alt="HP DeskJet 2320 (7WN42B)")
+        .card__promo.promo
+          span.promo__text.promo__text-hot -24%
+          span.promo__text.promo__text-hot ХІТ
+          span.promo__text.promo__text-cool найкраща цена
+        .card__note Знижки до 26% на принтери
+        .card__name HP DeskJet 2320 (7WN42B)
+        .card__review.review
+          .review__rating.rating.rating-emty
+            .rating.rating-fill(style="width:80%")
+          object
+            a.review__link(href="#review") 6 відгуків
+        .card__price.price
+          .price__title цена
+          .price__inner
+            .price__sale 6 868 грн.
+            .price__note + 69 грн. кешбек
+          .price__old 8999 грн.
+        .card__control
+          button.btn(type="button") купити
+          button.btn_icon.btn_icon-wish(type="button")
+            include ../img/icon/wish.svg
+          button.btn_icon.btn_icon-compare(type="button")
+            include ../img/icon/compare.svg

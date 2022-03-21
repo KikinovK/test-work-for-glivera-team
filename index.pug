@@ -1,3 +1,6 @@
+
+include component/card
+
 doctype html
 html(lang="en")
   head
@@ -10,3 +13,8 @@ html(lang="en")
     link(rel="stylesheet", href="style.css")
     title Test work for Glivera-team
   body
+    - let n = 0;
+
+    while n < 10
+      +card
+      - n++
