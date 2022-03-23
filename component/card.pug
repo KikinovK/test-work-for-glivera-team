@@ -1,5 +1,6 @@
 mixin card
-  a.card(class!=attributes.class href="#")
+  .card(class!=attributes.class)
+    .card__link( href="#")
         span.card__code Код товару: 48896
         picture
           source(srcset="./img/140357243.webp", type="image/webp")
@@ -21,9 +22,10 @@ mixin card
             .price__sale 6 868 грн.
             .price__note + 69 грн. кешбек
           .price__old 8999 грн.
-        .card__control
+        .card__control.control
           button.btn(type="button") купити
-          button.btn_icon.btn_icon-wish(type="button")
-            include ../img/icon/wish.svg
-          button.btn_icon.btn_icon-compare(type="button")
-            include ../img/icon/compare.svg
+          .control__inner
+            button.btn_icon.btn_icon-wish(type="button")
+              include ../img/icon/wish.svg
+            button.btn_icon.btn_icon-compare(type="button")
+              include ../img/icon/compare.svg
