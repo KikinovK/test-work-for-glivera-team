@@ -1,0 +1,33 @@
+.list_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: stretch;
+  column-gap: var(--cards-gap);
+  row-gap: var(--cards-gap);
+
+  &__item {
+    width: calc(20% - var(--cards-gap));
+
+    list-style: none;
+
+    @media (max-width: 1440px) {
+      width: calc(25% - var(--cards-gap));
+    }
+
+    @media (max-width: 1024px) {
+      width: calc(33% - var(--cards-gap));
+    }
+
+    @media (max-width: 768px) {
+      width: calc(50% - var(--cards-gap));
+    }
+
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+  }
+
+
+
+}
